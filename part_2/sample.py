@@ -1,5 +1,10 @@
 from __future__ import annotations
-import argparse, torch
+
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
+import torch
+import argparse
 from tokenizer import ByteTokenizer
 from model_gpt import GPT
 
