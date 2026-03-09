@@ -14,4 +14,4 @@ class SwiGLU(nn.Module):
     def forward(self, x):
         a = self.w1(x)
         b = self.act(self.w2(x))
-        return self.drop(self.w3(a * b))
+        return self.drop(self.w3(a * b)) 
