@@ -1,3 +1,6 @@
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 import torch, tempfile, os
 import torch.nn as nn
 from checkpointing import save_checkpoint, load_checkpoint
