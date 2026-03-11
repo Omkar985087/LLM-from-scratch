@@ -17,7 +17,8 @@
 #   cd part_5
 #   python orchestrator.py --demo
 #   pytest -q
-
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import argparse, pathlib, subprocess, sys, shlex
 
 ROOT = pathlib.Path(__file__).resolve().parent
